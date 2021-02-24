@@ -1,0 +1,38 @@
+---
+title: "Welcome to Learning to Blog"
+description: |
+  Welcome to our new blog, Learning to Blog. We hope you enjoy 
+  reading what we have to say!
+author:
+  - name: Kavya Mudiam
+    url: https://example.com/norajones
+    affiliation: UO - EDLD 626
+    affiliation_url: https:www.uoregon.edu
+    
+date: 02-24-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+```{r}
+distill::create_blog("some stuff with models")
+```
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+ggplot(mtcars, aes(disp, mpg))+
+  geom_point() +
+  geom_smooth()
+```
+
+

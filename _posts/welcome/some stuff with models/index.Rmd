@@ -1,0 +1,14 @@
+---
+title: "some stuff with models"
+site: distill::distill_website
+listing: posts
+---
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+ggplot(mtcars, aes(disp, mpg))+
+  geom_point() +
+  geom_smooth()
+```
+

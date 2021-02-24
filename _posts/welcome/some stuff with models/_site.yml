@@ -1,0 +1,12 @@
+name: "some stuff with models"
+title: "some stuff with models"
+description: |
+  some stuff with models
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
